@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="text-info h2 text-center">Pitsa buyurtma qilish</h1>
+    <div class="boxes d-flex">  
+      <div class="col-8">
+        <div class="rounded p-3 mt-2 bg-body">
+          
+          <form class="form js-form-chek d-flex flex-column border-end border-3 border-dark" action="https://echo.htmlacademy.ru/" id="form-pizza" method="post" autocomplete="off">
+            
+            <label class="label mb-4" for="select-id">Noni qanday bo'lsin? 
+              
+              <select class="select d-block mt-2 w-25" name="name" id="select-id">
+              </select>
+            </label> 
+            
+            <div class="mt-4">
+              <h3 class="h4">Kattaligi:</h3>
+              
+              <label class="label__cm">
+                <input class="input__cm1 visually-hidden" type="radio">
+                <span class="span__cm d-block border border-dark border-2 p-4 rounded-pill px-3 mx-2">25cm</span>
+              </label>
+              
+              <label class="label__cm2">
+                <input class="input__cm2 visually-hidden" type="radio">
+                <span class="span__cm d-block border border-dark border-2 p-4 rounded-pill px-3 mx-2">30cm</span>
+              </label>
+              
+              <label class="label__cm3">
+                <input class="input__cm3 visually-hidden" type="radio">
+                <span class="span__cm d-block border border-dark border-2 p-4 rounded-pill px-3 mx-2">35cm</span>
+              </label>
+              
+            </div>
+
+            <div class="chek__box d-flex row mt-5">
+             <div class="d-flex flex-column col-3">
+              <label class="chek__label">
+                <input class="chek__input" type="checkbox">
+                <span class="chek__span">Pomidor</span>
+              </label>
+
+              <label class="chek__label1">
+                <input class="chek__input1" type="checkbox">
+                <span class="chek__span1">zaytun</span>
+              </label>
+
+              <label class="chek__label2">
+                <input class="chek__input2" type="checkbox">
+                <span class="chek__span2">Qo'ziqorin</span>
+              </label>
+             </div>
+
+              <div class="d-flex flex-column col-3">
+                <label class="chek__label3">
+                  <input class="chek__input3" type="checkbox">
+                  <span class="chek__span3">Kurka go'shti</span>
+                </label>
+  
+                <label class="chek__label4">
+                  <input class="chek__input4" type="checkbox">
+                  <span class="chek__span4">Tuzlangan bodring</span>
+                </label>
+  
+                <label class="chek__label5">
+                  <input class="chek__input5" type="checkbox">
+                  <span class="chek__span5">Qazi</span>
+                </label>
+              </div>
+
+              <h3 class="mt-5 title">Qo'shimchalar:</h3>
+                  
+                <label class="chek__label6 mt-3">
+                  <input class="chek__input6" type="checkbox">
+                  <span class="chek__span6">Achchiq</span>
+                </label>
+                
+                <label class="chek__label7 mt-3">
+                  <input class="chek__input7" type="checkbox">
+                  <span class="chek__span7">Sosiskali</span>
+                </label>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      
+      <div class="col-4">
+        
+        <div class="p-3 mt-2 mb-0 bg-body rounded d-flex flex-column fs-6">
+          
+          <output id="output" class="mb-3">
+            
+            <strong>Non: </strong><span class="output__bread"></span>
+            
+          </output>
+          
+          <output id="output" >
+            
+            <strong>Kattaligi: </strong><strong class="output__size text-danger"></strong>
+            
+          </output>
+          
+          <output id="output" >
+            
+            <strong class="d-block">Ustida:<strong class="output__add"></strong></strong>
+            <ul class="list-unstyled list"></ul>
+          </output>
+          
+          <output id="output" >
+            
+            <strong>Qo'shimchalar:<strong class="output__additions"></strong></strong>
+            <ul class="list-unstyled list1"></ul>
+          </output>
+          
+        </div>
+        <button class="btn bg-danger w-75 p-2" type="submit" form="form-pizza">Buyurtma berish</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="./js/app.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
+</body>
+</html>
